@@ -32,13 +32,13 @@ En el desarrollo de nuestro proyecto de arquitectura (Event Driven - STREAM), no
 
 ## Opciones Consideradas
 
-* Opción 1: Patrones Publish/Subscribe, Abstract Factory y Chain of Responsibility
+Opción 1: Patrones Publish/Subscribe, Abstract Factory y Chain of Responsibility
 
 - Utilizar el patrón de diseño Publish/Subscribe para la publicación y suscripción de eventos.
 - Aplicar el patrón de diseño Abstract Factory para la creación de instancias de diferentes tipos de objetos.
 - Implementar el patrón de diseño Chain of Responsibility para gestionar solicitudes de manera secuencial.
 
-* Opción 2: Patrones Observer, Strategy y Abstract Factory
+Opción 2: Patrones Observer, Strategy y Abstract Factory
 
 - Emplear el patrón de diseño Observer para la publicación y suscripción de eventos.
 - Aplicar el patrón de diseño Strategy para proporcionar una manera flexible de crear familias de objetos relacionados.
