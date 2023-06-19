@@ -1,86 +1,63 @@
 ---
-# Configuration for the Jekyll template "Just the Docs"
-parent: Decisions
-nav_order: 100
-title: ADR Template
+# Configuración para la plantilla de Jekyll "Just the Docs"
+parent: Decisiones
+nav_order: 1
+title: ADR Monitoreo, Alertas e Información
 
-# These are optional elements. Feel free to remove any of them.
-# status: "{proposed | rejected | accepted | deprecated | … | superseded by [ADR-0005](0005-example.md)}"
-# date: {YYYY-MM-DD when the decision was last updated}
-# deciders: {list everyone involved in the decision}
-# consulted: {list everyone whose opinions are sought (typically subject-matter experts); and with whom there is a two-way communication}
-# informed: {list everyone who is kept up-to-date on progress; and with whom there is a one-way communication}
+# Estos son elementos opcionales. Siéntete libre de eliminar cualquiera de ellos.
+# status: "{propuesto | rechazado | aceptado | obsoleto | … | reemplazado por [ADR-0005](0005-ejemplo.md)}"
+# date: {YYYY-MM-DD cuando se actualizó por última vez la decisión}
+# deciders: {lista de todos los involucrados en la decisión}
+# consulted: {lista de todos aquellos cuyas opiniones se solicitan (normalmente expertos en la materia); y con quienes hay una comunicación bidireccional}
+# informed: {lista de todos aquellos que se mantienen actualizados sobre el progreso; y con quienes hay una comunicación unidireccional}
 ---
-<!-- we need to disable MD025, because we use the different heading "ADR Template" in the homepage (see above) than it is foreseen in the template -->
-<!-- markdownlint-disable-next-line MD025 -->
-# {short title of solved problem and solution}
+## Contexto y Problema Planteado
 
-## Context and Problem Statement
+El sistema requiere una solución robusta y eficiente para el monitoreo, alertas y suministro de información en tiempo real sobre los procesos de producción y las órdenes de trabajo.
 
-{Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story.
- You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.}
+## Factores Determinantes de la Decisión
 
-<!-- This is an optional element. Feel free to remove. -->
-## Decision Drivers
+* Monitoreo y análisis en tiempo real de los procesos de producción y las órdenes de trabajo.
+* Recolección y procesamiento eficiente de datos de los sensores.
+* Notificaciones y alertas oportunas para los operadores.
 
-* {decision driver 1, e.g., a force, facing concern, …}
-* {decision driver 2, e.g., a force, facing concern, …}
-* … <!-- numbers of drivers can vary -->
+## Opciones Consideradas
 
-## Considered Options
+* Opción 1: Implementar el patrón de comportamiento Publicar/Suscribir para la visualización en tiempo real de análisis, el monitoreo de sensores y las notificaciones.
+* Opción 2: Utilizar un patrón o enfoque diferente para los requisitos de monitoreo e información.
 
-* {title of option 1}
-* {title of option 2}
-* {title of option 3}
-* … <!-- numbers of options can vary -->
+## Resultado de la Decisión
 
-## Decision Outcome
+Opción elegida: Opción 1 - Implementar el patrón de comportamiento Publicar/Suscribir para la visualización en tiempo real de análisis, el monitoreo de sensores y las notificaciones.
 
-Chosen option: "{title of option 1}", because
-{justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}.
+### Consecuencias
 
-<!-- This is an optional element. Feel free to remove. -->
-### Consequences
+* Bueno, porque el patrón Publicar/Suscribir permite actualizaciones y visualización en tiempo real de los análisis de los procesos de producción y las órdenes de trabajo.
+* Bueno, porque el patrón permite la recolección, procesamiento y distribución eficiente de datos de los sensores a los componentes relevantes.
+* Bueno, porque las notificaciones y alertas pueden ser fácilmente enviadas a los operadores suscritos, manteniéndolos informados sobre eventos críticos.
+* Malo, porque implementar el patrón puede requerir infraestructura adicional y esfuerzo de desarrollo.
+* Malo, porque la complejidad del sistema puede aumentar debido a la introducción del patrón.
 
-* Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
-* Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
-* … <!-- numbers of consequences can vary -->
+### Confirmación
 
-<!-- This is an optional element. Feel free to remove. -->
-### Confirmation
+La implementación del patrón de comportamiento Publicar/Suscribir será confirmada a través de revisiones de código y pruebas para garantizar que los datos fluyan correctamente entre los componentes y que las notificaciones y la visualización de análisis funcionen según lo esperado.
 
-{Describe how the implementation of/compliance with the ADR is confirmed. E.g., by a review or an ArchUnit test.
- Although we classify this element as optional, it is included in most ADRs.}
+## Pros y Contras de las Opciones
 
-<!-- This is an optional element. Feel free to remove. -->
-## Pros and Cons of the Options
+### Opción 1: Implementar el patrón de comportamiento Publicar/Suscribir
 
-### {title of option 1}
+* Bueno, porque permite actualizaciones y visualización en tiempo real.
+* Bueno, porque permite la recolección, procesamiento y distribución eficiente de datos de los sensores.
+* Bueno, porque las notificaciones y alertas pueden ser fácilmente enviadas a los operadores suscritos.
+* Malo, porque puede requerir infraestructura adicional y esfuerzo de desarrollo.
+* Malo, porque puede introducir complejidad al sistema.
 
-<!-- This is an optional element. Feel free to remove. -->
-{example | description | pointer to more information | …}
+### Opción 2: Utilizar un patrón o enfoque diferente
 
-* Good, because {argument a}
-* Good, because {argument b}
-<!-- use "neutral" if the given argument weights neither for good nor bad -->
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* … <!-- numbers of pros and cons can vary -->
+* No se considera, ya que no cumple con los requisitos de visualización en tiempo real de análisis, procesamiento eficiente de datos de sensores y notificaciones oportunas.
 
-### {title of other option}
+## Más Información
 
-{example | description | pointer to more information | …}
+Las discusiones adicionales y la documentación sobre los detalles de implementación y consideraciones arquitectónicas se capturarán en los documentos de diseño y en los repositorios de código correspondientes.
 
-* Good, because {argument a}
-* Good, because {argument b}
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* …
 
-<!-- This is an optional element. Feel free to remove. -->
-## More Information
-
-{You might want to provide additional evidence/confidence for the decision outcome here and/or
- document the team agreement on the decision and/or
- define when/how this decision the decision should be realized and if/when it should be re-visited.
-Links to other decisions and resources might appear here as well.}
