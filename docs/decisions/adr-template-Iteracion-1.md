@@ -1,19 +1,28 @@
 ---
-# Configuración para la plantilla de Jekyll "Just the Docs"
+# Configuración para la plantilla de ADR "Nuevas tecnologias"
 parent: Decisiones de arquitectura
 nav_order: 1
 title: Iteración 1
 
-# Estos son elementos opcionales. Siéntete libre de eliminar cualquiera de ellos.
-# status: "{propuesto | rechazado | aceptado | obsoleto | … | reemplazado por [ADR-0005](0005-ejemplo.md)}"
-# date: {YYYY-MM-DD cuando se actualizó por última vez la decisión}
-# deciders: {lista de todos los involucrados en la decisión}
-# consulted: {lista de todos aquellos cuyas opiniones se solicitan (normalmente expertos en la materia); y con quienes hay una comunicación bidireccional}
-# informed: {lista de todos aquellos que se mantienen actualizados sobre el progreso; y con quienes hay una comunicación unidireccional}
+# status: "{reemplazado por [ADR-0005](0005-ejemplo.md)}"
+# date: {2023-06-19}
+# deciders: {Grupo 7 - MATI}
+# consulted: {Arquitectos Senior, ArquitectosCognitivos}
+# informed: {Grupo 7 - MATI}
 ---
 ## Contexto y Problema Planteado
 
-El sistema requiere una solución robusta y eficiente para el monitoreo, alertas y suministro de información en tiempo real sobre los procesos de producción y las órdenes de trabajo.
+En el desarrollo de nuestro proyecto de arquitectura (Event Driven - STREAM), nos encontramos con la necesidad de implementar patrones de diseño para abordar los siguientes requerimientos funcionales para nuestra primera ITERACIÓN:
+
+- RF001: Realizar la publicación y suscripción de eventos.
+- RF001-1: Permitir la publicación de eventos por parte de diferentes componentes del sistema.
+- RF001-2: Permitir la suscripción a eventos por parte de diferentes componentes del sistema.
+- RF001-3: Establecer un mecanismo eficiente para la distribución de eventos.
+- RF002: Utilizar una fábrica abstracta para crear instancias de diferentes tipos de objetos.
+- RF004: Proporcionar una manera flexible de crear familias de objetos relacionados.
+- RF005: Implementar el patrón de Chain of Responsibility para gestionar solicitudes de manera secuencial.
+- RF005-1: Permitir la modificación dinámica de la cadena de responsabilidad.
+    
 
 ## Factores Determinantes de la Decisión
 
@@ -23,12 +32,21 @@ El sistema requiere una solución robusta y eficiente para el monitoreo, alertas
 
 ## Opciones Consideradas
 
-* Opción 1: Implementar los patrones de comportamiento Publicar/Suscribir, Abstract Factories y Strategy para la visualización en tiempo real de análisis, el monitoreo de sensores y las notificaciones.
-* Opción 2: Utilizar el patrón Observer para los requisitos de monitoreo e información.
+* Opción 1: Patrones Publish/Subscribe, Abstract Factory y Chain of Responsibility
+
+- Utilizar el patrón de diseño Publish/Subscribe para la publicación y suscripción de eventos.
+- Aplicar el patrón de diseño Abstract Factory para la creación de instancias de diferentes tipos de objetos.
+- Implementar el patrón de diseño Chain of Responsibility para gestionar solicitudes de manera secuencial.
+
+* Opción 2: Patrones Observer, Strategy y Abstract Factory
+
+- Emplear el patrón de diseño Observer para la publicación y suscripción de eventos.
+- Aplicar el patrón de diseño Strategy para proporcionar una manera flexible de crear familias de objetos relacionados.
+- Utilizar el patrón de diseño Abstract Factory para la creación de instancias de diferentes tipos de objetos.
 
 ## Resultado de la Decisión
 
-Opción elegida: Opción 1 - Implementar los patrones de comportamiento Publicar/Suscribir, Abstract Factories y Strategy para la visualización en tiempo real de análisis, el monitoreo de sensores y las notificaciones.
+Opción elegida: Opción 1 - Implementar los patrones de comportamiento Publicar/Suscribir, Abstract Factories y Chain of Responsibility para la visualización en tiempo real de análisis, el monitoreo de sensores y las notificaciones.
 
 ### Consecuencias
 
@@ -40,7 +58,7 @@ Opción elegida: Opción 1 - Implementar los patrones de comportamiento Publicar
 
 ## Pros y Contras de las Opciones
 
-### Opción 1: Implementar los patrones de comportamiento Publicar/Suscribir, Abstract Factories y Strategy
+### Opción 1: Implementar los patrones de comportamiento Publicar/Suscribir, Abstract Factories y Chain of Responsibility
 
 * Bueno, porque permite actualizaciones y visualización en tiempo real.
 * Bueno, porque permite la recolección, procesamiento y distribución eficiente de datos de los sensores.
@@ -48,7 +66,7 @@ Opción elegida: Opción 1 - Implementar los patrones de comportamiento Publicar
 * Malo, porque puede requerir infraestructura adicional y esfuerzo de desarrollo.
 * Malo, porque puede introducir complejidad al sistema.
 
-### Opción 2: Utilizar el patrón Observer
+### Opción 2: Utilizar el patrón Observer, Strategy y Abstract Factory
 
 * Bueno, porque permite una estructura flexible y desacoplada para la gestión de eventos y notificaciones.
 * Bueno, porque permite la actualización y propagación de información a los observadores interesados.
@@ -57,7 +75,7 @@ Opción elegida: Opción 1 - Implementar los patrones de comportamiento Publicar
 
 ### Decisión Justificada
 
-La opción 1, de implementar los patrones de comportamiento Publicar/Suscribir, Abstract Factories y Strategy, es elegida debido a su capacidad para proporcionar actualizaciones en tiempo real, recolectar y procesar eficientemente datos de sensores, y enviar notificaciones y alertas a los operadores suscritos. Aunque la implementación puede requerir esfuerzo adicional y aumentar la complejidad del sistema, sus beneficios superan los inconvenientes identificados.
+La opción 1, de implementar los patrones de comportamiento Publicar/Suscribir, Abstract Factories y Chain of Responsibility, es elegida debido a su capacidad para proporcionar actualizaciones en tiempo real, recolectar y procesar eficientemente datos de sensores, y enviar notificaciones y alertas a los operadores suscritos. Aunque la implementación puede requerir esfuerzo adicional y aumentar la complejidad del sistema, sus beneficios superan los inconvenientes identificados.
 
 ## Más Información
 
