@@ -1,8 +1,8 @@
 ---
 # Configuration for the Jekyll template "Just the Docs"
 parent: Decisions
-nav_order: 100
-title: ADR Template
+nav_order: 1
+title: ADR Monitoreo, Alertamiento y Infromación
 
 # These are optional elements. Feel free to remove any of them.
 # status: "{proposed | rejected | accepted | deprecated | … | superseded by [ADR-0005](0005-example.md)}"
