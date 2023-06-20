@@ -14,15 +14,14 @@ title: Iteración 1
 
 En el desarrollo de nuestro proyecto de arquitectura (Event Driven - STREAM), nos encontramos con la necesidad de implementar patrones de diseño para abordar los siguientes requerimientos funcionales para nuestra primera ITERACIÓN:
 
-- RF001: Realizar la publicación y suscripción de eventos.
-- RF001-1: Permitir la publicación de eventos por parte de diferentes componentes del sistema.
-- RF001-2: Permitir la suscripción a eventos por parte de diferentes componentes del sistema.
-- RF001-3: Establecer un mecanismo eficiente para la distribución de eventos.
-- RF002: Utilizar una fábrica abstracta para crear instancias de diferentes tipos de objetos.
-- RF004: Proporcionar una manera flexible de crear familias de objetos relacionados.
-- RF005: Implementar el patrón de Chain of Responsibility para gestionar solicitudes de manera secuencial.
-- RF005-1: Permitir la modificación dinámica de la cadena de responsabilidad.
-    
+- RF001: Centro de notificaciones
+- RF001-1: Componente de visualización de analítica para procesos productivos
+- RF001-2: Componente de visualización de analítica para ordenes de trabajo
+- RF001-3: Componente de visualización sensores de los componentes IOT tipo Cockpit.
+- RF002: Módulo de Ordenes de Trabajo
+- RF004: Componente gestor de base de datos
+- RF005: Sensores IoT
+- RF005-1: Sensores familia A (Sensores monolíticos)
 
 ## Factores Determinantes de la Decisión
 
