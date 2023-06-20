@@ -1,86 +1,90 @@
 ---
-# Configuration for the Jekyll template "Just the Docs"
-parent: Decisions
-nav_order: 100
-title: ADR Template
+# Configuración para la plantilla de ADR "Nuevas tecnologias"
+parent: Decisiones de arquitectura
+nav_order: 1
+title: Iteración 2
 
-# These are optional elements. Feel free to remove any of them.
-# status: "{proposed | rejected | accepted | deprecated | … | superseded by [ADR-0005](0005-example.md)}"
-# date: {YYYY-MM-DD when the decision was last updated}
-# deciders: {list everyone involved in the decision}
-# consulted: {list everyone whose opinions are sought (typically subject-matter experts); and with whom there is a two-way communication}
-# informed: {list everyone who is kept up-to-date on progress; and with whom there is a one-way communication}
+# status: "{reemplazado por [ADR-0005](0005-ejemplo.md)}"
+# date: {2023-06-19}
+# deciders: {Grupo 7 - MATI}
+# consulted: {Arquitectos Senior, ArquitectosCognitivos}
+# informed: {Grupo 7 - MATI}
 ---
-<!-- we need to disable MD025, because we use the different heading "ADR Template" in the homepage (see above) than it is foreseen in the template -->
-<!-- markdownlint-disable-next-line MD025 -->
-# {short title of solved problem and solution}
+## Contexto y Problema Planteado
 
-## Context and Problem Statement
+En el desarrollo de nuestro proyecto de arquitectura (Event Driven - STREAM), nos encontramos con la necesidad de implementar patrones de diseño para abordar los siguientes requerimientos funcionales para nuestra segunda ITERACIÓN:
 
-{Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story.
- You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.}
+- RF001: Centro de notificaciones
+- RF001-1: Componente de visualización de analítica para procesos productivos
+- RF001-2: Componente de visualización de analítica para ordenes de trabajo
+- RF001-3: Componente de visualización sensores de los componentes IOT tipo Cockpit.
+- RF002: Módulo de Ordenes de Trabajo
+- RF004: Componente gestor de base de datos
+- RF005: Sensores IoT
+- RF005-1: Sensores familia A (Sensores monolíticos)
+- RF003: Componente de mensajería interna y notificaciones
+    
 
-<!-- This is an optional element. Feel free to remove. -->
-## Decision Drivers
+## Factores Determinantes de la Decisión
 
-* {decision driver 1, e.g., a force, facing concern, …}
-* {decision driver 2, e.g., a force, facing concern, …}
-* … <!-- numbers of drivers can vary -->
+* Monitoreo y análisis en tiempo real de los procesos de producción y las órdenes de trabajo.
+* Recolección y procesamiento eficiente de datos de los sensores.
+* Notificaciones y alertas oportunas para los operadores.
+* Componente de mensajería interna y notificaciones.
 
-## Considered Options
 
-* {title of option 1}
-* {title of option 2}
-* {title of option 3}
-* … <!-- numbers of options can vary -->
+## Opciones Consideradas
 
-## Decision Outcome
+Opción 1: Patrones Publish/Subscribe, Abstract Factory, Chain of Responsibility y Componente de mensajería interna
 
-Chosen option: "{title of option 1}", because
-{justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}.
+- Utilizar el patrón de diseño Publish/Subscribe para la publicación y suscripción de eventos.
+- Aplicar el patrón de diseño Abstract Factory para la creación de instancias de diferentes tipos de objetos.
+- Implementar el patrón de diseño Chain of Responsibility para gestionar solicitudes de manera secuencial.
+- Desarrollar un componente de mensajería interna específico para satisfacer el requisito RF003.
 
-<!-- This is an optional element. Feel free to remove. -->
-### Consequences
+Opción 2: Patrones Observer, Strategy y Abstract Factory
 
-* Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
-* Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
-* … <!-- numbers of consequences can vary -->
+- Emplear el patrón de diseño Observer para la publicación y suscripción de eventos.
+- Aplicar el patrón de diseño Strategy para proporcionar una manera flexible de crear familias de objetos relacionados.
+- Utilizar el patrón de diseño Abstract Factory para la creación de instancias de diferentes tipos de objetos.
+- Desarrollar un componente de mensajería interna específico para satisfacer el requisito RF003.
 
-<!-- This is an optional element. Feel free to remove. -->
-### Confirmation
+## Resultado de la Decisión
 
-{Describe how the implementation of/compliance with the ADR is confirmed. E.g., by a review or an ArchUnit test.
- Although we classify this element as optional, it is included in most ADRs.}
+La opción elegida es la Opción 1: Patrones Publish/Subscribe, Abstract Factory, Chain of Responsibility y Componente de mensajería interna. Esta opción combina la utilización de patrones de diseño comunes, como Publish/Subscribe, Abstract Factory y Chain of Responsibility, con el desarrollo de un componente de mensajería interna específico para satisfacer el requisito RF003: Componente de mensajería interna y notificaciones.
 
-<!-- This is an optional element. Feel free to remove. -->
-## Pros and Cons of the Options
+### Consecuencias
 
-### {title of option 1}
+* Bueno, porque los patrones Publish/Subscribe, Abstract Factory y Chain of Responsibility permiten actualizaciones y visualización en tiempo real de los análisis de los procesos de producción y las órdenes de trabajo.
+* Bueno, porque los patrones permiten la recolección, procesamiento y distribución eficiente de datos de los sensores a los componentes relevantes.
+* Bueno, porque las notificaciones y alertas pueden ser fácilmente enviadas a los operadores suscritos, manteniéndolos informados sobre eventos críticos.
+* Bueno, porque el componente de mensajería interna proporcionará una forma eficiente y coherente de gestionar las comunicaciones internas y las notificaciones.
+* Malo, porque implementar los patrones y desarrollar el componente de mensajería interna puede requerir infraestructura adicional y esfuerzo de desarrollo.
+* Malo, porque la complejidad del sistema puede aumentar debido a la introducción de los patrones y el componente adicional.
 
-<!-- This is an optional element. Feel free to remove. -->
-{example | description | pointer to more information | …}
+## Pros y Contras de las Opciones
 
-* Good, because {argument a}
-* Good, because {argument b}
-<!-- use "neutral" if the given argument weights neither for good nor bad -->
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* … <!-- numbers of pros and cons can vary -->
+### Opción 1: Implementar los patrones de comportamiento Publicar/Suscribir, Abstract Factories y Chain of Responsibility
 
-### {title of other option}
+* Bueno, porque permite actualizaciones y visualización en tiempo real.
+* Bueno, porque permite la recolección, procesamiento y distribución eficiente de datos de los sensores.
+* Bueno, porque las notificaciones y alertas pueden ser fácilmente enviadas a los operadores suscritos.
+* Bueno, porque el componente de mensajería interna proporcionará una forma eficiente y coherente de gestionar las comunicaciones internas y las notificaciones.
+* Malo, porque puede requerir infraestructura adicional y esfuerzo de desarrollo.
+* Malo, porque puede introducir complejidad al sistema.
 
-{example | description | pointer to more information | …}
+### Opción 2: Utilizar el patrón Observer, Strategy y Abstract Factory
 
-* Good, because {argument a}
-* Good, because {argument b}
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* …
+* Bueno, porque permite una estructura flexible y desacoplada para la gestión de eventos y notificaciones.
+* Bueno, porque permite la actualización y propagación de información a los observadores interesados.
+* Bueno, porque el componente de mensajería interna proporcionará una forma eficiente y coherente de gestionar las comunicaciones internas y las notificaciones.
+* Malo, porque puede requerir un diseño más elaborado para gestionar la suscripción y notificación de eventos.
+* Malo, porque puede ser menos eficiente en términos de procesamiento y distribución de datos en comparación con Publicar/Suscribir.
 
-<!-- This is an optional element. Feel free to remove. -->
-## More Information
+### Decisión Justificada
 
-{You might want to provide additional evidence/confidence for the decision outcome here and/or
- document the team agreement on the decision and/or
- define when/how this decision the decision should be realized and if/when it should be re-visited.
-Links to other decisions and resources might appear here as well.}
+La opción elegida es la Opción 1, que consiste en implementar los patrones Publish/Subscribe, Abstract Factory, Chain of Responsibility y desarrollar un componente de mensajería interna específico para cumplir con el requisito RF003: Componente de mensajería interna y notificaciones. Esta opción fue seleccionada debido a su capacidad para proporcionar actualizaciones en tiempo real, recolectar y procesar eficientemente datos de sensores, enviar notificaciones y alertas a los operadores suscritos, y gestionar las comunicaciones internas de manera coherente. Aunque la implementación puede requerir esfuerzo adicional y aumentar la complejidad del sistema, los beneficios identificados justifican esta decisión.
+
+## Más Información
+
+Las discusiones adicionales y la documentación sobre los detalles de implementación y consideraciones arquitectónicas se capturarán en los documentos de diseño y en los repositorios de código correspondientes.
