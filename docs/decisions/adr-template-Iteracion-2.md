@@ -1,7 +1,7 @@
 ---
 # Configuración para la plantilla de ADR "Nuevas tecnologias"
 parent: Decisiones de arquitectura
-nav_order: 1
+nav_order: 2
 title: Iteración 2
 
 # status: "{reemplazado por [ADR-0005](0005-ejemplo.md)}"

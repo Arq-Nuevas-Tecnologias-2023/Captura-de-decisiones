@@ -1,7 +1,7 @@
 ---
 # Configuración para la plantilla de ADR "Nuevas tecnologias"
 parent: Decisiones de arquitectura
-nav_order: 1
+nav_order: 3
 title: Iteración 3
 
 # status: "{Acepted [ADR-0005](0005-ejemplo.md)}"
