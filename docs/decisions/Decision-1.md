@@ -23,10 +23,10 @@ El contexto de esta opción es proporcionar capacidades de visualización y aná
 
 ## Considered Options
 
-* Implementar una solución basada en el patrón Publish/Subscribe y utilizar Abstract Factories para la creación de componentes de visualización.
-* Aplicar el patrón Observer y el patrón Factory Method para la implementación de la visualización en tiempo real.
-* Utilizar el patrón Command y el patrón Singleton para la gestión de las interacciones y la comunicación en tiempo real.
-* Emplear el patrón MVC (Modelo-Vista-Controlador) para estructurar la arquitectura de visualización y análisis en tiempo real.
+*  **Opción 1**:Implementar una solución basada en el patrón Publish/Subscribe y utilizar Abstract Factories para la creación de componentes de visualización.
+*  **Opción 2**:Aplicar el patrón Observer y el patrón Factory Method para la implementación de la visualización en tiempo real.
+*  **Opción 3**:Utilizar el patrón Command y el patrón Singleton para la gestión de las interacciones y la comunicación en tiempo real.
+*  **Opción 4**:Emplear el patrón MVC (Modelo-Vista-Controlador) para estructurar la arquitectura de visualización y análisis en tiempo real.
 
 ## Decision Outcome
 
