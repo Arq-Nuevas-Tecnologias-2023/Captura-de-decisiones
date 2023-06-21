@@ -17,9 +17,9 @@ El contexto de esta opción es proporcionar capacidades de visualización y aná
 
 ## Decision Drivers
 
-* RF001-1: Componente de visualización de analítica para procesos productivos
-* RF001-2: Componente de visualización de analítica para órdenes de trabajo
-* RF001-3: Componente de visualización de sensores de los componentes IoT tipo Cockpit
+* Componente de visualización de analítica para procesos productivos
+* Componente de visualización de analítica para órdenes de trabajo
+* Componente de visualización de sensores de los componentes IoT tipo Cockpit
 
 ## Considered Options
 
