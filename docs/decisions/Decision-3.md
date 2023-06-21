@@ -53,7 +53,7 @@ Al elegir la opción 1, se esperan las siguientes consecuencias:
 ### Opción 1:  Implementar el componente de mensajería interna y notificaciones utilizando el patrón Publish/Subscribe en un entorno basado en Event Driven.
 
 * **Ventajas**:
-  * Alineado con el estilo de arquitectura Event Driven (STREAM), lo que garantiza un flujo eficiente y asincrónico de mensajes y notificaciones.
+  * Alineado con el estilo de arquitectura Event Driven, lo que garantiza un flujo eficiente y asincrónico de mensajes y notificaciones.
   * Permite la distribución eficiente de mensajes y notificaciones a los suscriptores interesados.
   * Mejora la escalabilidad del sistema al permitir la adición de nuevos suscriptores y publicadores de eventos sin afectar la arquitectura existente.
   * Facilita la extensibilidad y el mantenimiento del sistema en el futuro.
@@ -68,7 +68,7 @@ Al elegir la opción 1, se esperan las siguientes consecuencias:
   * No requiere la infraestructura adicional necesaria para soportar el patrón Publish/Subscribe.
 
 * **Desventajas**:
-  * No aprovecha las ventajas del estilo de arquitectura Event Driven (STREAM), como el flujo eficiente y asincrónico de mensajes y notificaciones.
+  * No aprovecha las ventajas del estilo de arquitectura Event Driven, como el flujo eficiente y asincrónico de mensajes y notificaciones.
   * Puede ser menos escalable y flexible en comparación con el enfoque basado en el patrón Publish/Subscribe.
   * Puede dificultar la extensibilidad y el mantenimiento del sistema en el futuro.
 
