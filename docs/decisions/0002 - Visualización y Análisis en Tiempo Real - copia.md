@@ -45,10 +45,6 @@ Las consecuencias de esta decisión son:
 * Bueno, porque facilita la integración de nuevos componentes de visualización en el futuro.
 * Malo, porque puede aumentar la complejidad debido a la implementación de los patrones adicionales.
 
-## Confirmación
-
-La implementación de esta decisión será confirmada mediante una revisión de diseño por parte del equipo de arquitectura y una revisión de código durante el desarrollo. Además, se realizarán pruebas y validaciones para garantizar que la arquitectura Event-Driven y los patrones de diseño se implementen correctamente.
-
 ## Pros y Contras de las Opciones
 
 ### Opción 2: Event-Driven con patrón Publish/Subscribe y Chain of Responsibility
