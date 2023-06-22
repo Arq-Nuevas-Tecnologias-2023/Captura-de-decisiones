@@ -59,8 +59,6 @@ La implementación de esta decisión será confirmada mediante una revisión de 
 
 ### Opción 1: Event-Driven con patrón Publish/Subscribe y Abstract Factory
 
-Esta opción proporciona una arquitectura modular y escalable para la visualización y análisis en tiempo real de la familia 1.
-
 * Bueno, porque permite una arquitectura modular y escalable.
 * Bueno, porque facilita la integración de nuevos componentes de visualización en el futuro.
 * Neutral, porque puede proporcionar flexibilidad y extensibilidad al permitir la creación dinámica de componentes de visualización.

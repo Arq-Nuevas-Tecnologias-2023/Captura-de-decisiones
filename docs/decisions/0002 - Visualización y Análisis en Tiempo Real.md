@@ -22,7 +22,7 @@ Esta decisión se enfoca en la visualización y análisis en tiempo real de los 
 
 ## Opción 2: Event-Driven con patrón Publish/Subscribe y Chain of Responsibility
 
-Utilizar un enfoque basado en Event-Driven con los patrones de diseño Publish/Subscribe y Chain of Responsibility para implementar la visualización y análisis en tiempo real de la familia 1.
+Utilizar un enfoque basado en Event-Driven con los patrones de diseño Publish/Subscribe y Chain of Responsibility para implementar la visualización y análisis en tiempo real.
 
 ### Detalles de la Opción 2
 
@@ -41,7 +41,7 @@ Desventajas de la Opción 2:
 
 Las consecuencias de esta decisión son:
 
-* Bueno, porque permite una arquitectura modular y escalable para la visualización y análisis en tiempo real de la familia 1.
+* Bueno, porque permite una arquitectura modular y escalable para la visualización y análisis en tiempo real.
 * Bueno, porque facilita la integración de nuevos componentes de visualización en el futuro.
 * Malo, porque puede aumentar la complejidad debido a la implementación de los patrones adicionales.
 
