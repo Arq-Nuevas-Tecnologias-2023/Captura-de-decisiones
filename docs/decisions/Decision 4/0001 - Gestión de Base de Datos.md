@@ -12,45 +12,28 @@ title: Iteración 1
 ---
 ## Contexto y Problema
 
-Esta decisión se refiere a la implementación de la Mensajería Interna y Notificaciones en el sistema. El problema radica en cómo diseñar y estructurar adecuadamente esta funcionalidad para garantizar la entrega confiable de mensajes internos y notificaciones a los usuarios del sistema. Se ha decidido utilizar el estilo arquitectónico basado en Event-Driven (Eventos) para la implementación de la Mensajería Interna y Notificaciones. Este estilo permite una comunicación asíncrona y desacoplada entre los diferentes componentes involucrados, lo que facilita la escalabilidad y la extensibilidad del sistema.
-
+Se requiere implementar un componente gestor de base de datos que cumpla con el estilo arquitectónico Event Driven (STREAM) y el patrón ABSTRACT FACTORY. La elección de la tecnología de persistencia es fundamental para garantizar la escalabilidad, rendimiento y confiabilidad del sistema.
 
 ## Drivers de Decisión
 
-* RF003: Componente de mensajería interna y notificaciones
+* RF004: Componente gestor de base de datos
 
-## Opción 1: Event-Driven con patrón Publish/Subscribe
+## Opción 1: Base de Datos Relacional
 
 El patrón Publish/Subscribe es una opción adecuada para esta familia, ya que permite la difusión eficiente de mensajes a múltiples destinatarios. En este patrón, los componentes que actúan como editores publican mensajes en un canal de comunicación, mientras que los suscriptores se suscriben a los canales relevantes para recibir los mensajes pertinentes. Esto garantiza un acoplamiento mínimo entre los componentes y facilita la escalabilidad y la distribución.
 
 
-## Decisión
-
-La opción elegida es la **Opción 1: Event-Driven con patrón Publish/Subscribe**. Este patrón proporciona un enfoque desacoplado y escalable para la difusión de mensajes, lo cual es beneficioso para el sistema en general.
-
-## Consecuencias
-
-La elección del patrón Publish/Subscribe para la implementación de la Mensajería Interna y Notificaciones tiene las siguientes consecuencias:
-
-* Bueno, porque permite la difusión eficiente de mensajes a múltiples destinatarios.
-* Bueno, porque desacopla los componentes, lo que facilita la escalabilidad y la extensibilidad.
-* Malo, porque puede generar una mayor complejidad en la gestión de los canales de comunicación y las suscripciones.
-* Requiere una implementación adicional para garantizar la entrega confiable de mensajes.
-
-## Confirmación
-
-La implementación y cumplimiento de esta decisión de diseño se confirmará a través de revisiones de arquitectura y pruebas de integración. Se revisará y evaluará el rendimiento, la escalabilidad y la confiabilidad del sistema para garantizar que la implementación del patrón Publish/Subscribe sea efectiva y satisfaga los requisitos funcionales.
-
 ## Pros y Contras de las Opciones
 
-### Opción 1: Event-Driven con patrón Publish/Subscribe
+### Opción 1: Base de Datos Relacional
 
-* Bueno, porque permite la difusión eficiente de mensajes a múltiples destinatarios.
-* Bueno, porque desacopla los componentes, lo que facilita la escalabilidad y la extensibilidad.
-* Neutral, porque requiere una implementación adicional para garantizar la entrega confiable de mensajes.
-* Malo, porque puede generar una mayor complejidad en la gestión de los canales de comunicación y las suscripciones.
+* Bueno, porque cuenta con una amplia adopción y una comunidad activa que brinda soporte y recursos.
+* Bueno, porque ofrece soporte para transacciones ACID, garantizando la integridad de los datos.
+* Bueno, porque permite realizar consultas SQL complejas para obtener información específica de manera eficiente.
+* Bueno, porque se puede aplicar el patrón ABSTRACT FACTORY para abstraer la creación de conexiones y consultas.
+* Malo, porque presenta un rendimiento ligeramente inferior en comparación con algunas tecnologías NoSQL, especialmente en escenarios con alta concurrencia o grandes volúmenes de datos.
+* Malo, porque el modelado de datos puede ser más complejo debido a las restricciones de esquema y relaciones.
 
 ## Más Información
 
-- [Artículo sobre el patrón Publish/Subscribe](https://learn.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber)
 

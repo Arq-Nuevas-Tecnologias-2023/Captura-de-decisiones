@@ -12,31 +12,33 @@ title: Iteración 1
 ---
 ## Contexto y Problema
 
-Esta decisión se refiere a la implementación de la Mensajería Interna y Notificaciones en el sistema. El problema radica en cómo diseñar y estructurar adecuadamente esta funcionalidad para garantizar la entrega confiable de mensajes internos y notificaciones a los usuarios del sistema. Se ha decidido utilizar el estilo arquitectónico basado en Event-Driven (Eventos) para la implementación de la Mensajería Interna y Notificaciones. Este estilo permite una comunicación asíncrona y desacoplada entre los diferentes componentes involucrados, lo que facilita la escalabilidad y la extensibilidad del sistema.
+Se requiere implementar un componente gestor de base de datos que cumpla con el estilo arquitectónico Event Driven (STREAM) y el patrón ABSTRACT FACTORY. La elección de la tecnología de persistencia es fundamental para garantizar la escalabilidad, rendimiento y confiabilidad del sistema.
 
 
 ## Drivers de Decisión
 
-* RF003: Componente de mensajería interna y notificaciones
+* RF004: Componente gestor de base de datos
 
-## Opción 2: Patrón Request/Response
+## Opción 2: Base de Datos NoSQL
 
-El patrón Request/Response es otra opción viable para la implementación de la Mensajería Interna y Notificaciones. En este patrón, los componentes envían solicitudes de mensajes a un componente centralizado responsable de la entrega de los mensajes. El componente centralizado puede realizar la entrega directa o almacenar y enviar mensajes en cola para garantizar la entrega confiable.
+La opción 2 propone utilizar una base de datos NoSQL, como MongoDB, que ofrece una estructura flexible y escalabilidad horizontal. Este tipo de tecnología es adecuada para escenarios donde se requiere un alto rendimiento y almacenamiento de datos no estructurados. El patrón ABSTRACT FACTORY también se puede aplicar para abstraer la creación de conexiones y consultas a la base de datos.
 
 ## Confirmación
 
-La implementación y cumplimiento de esta decisión de diseño se confirmará a través de revisiones de arquitectura y pruebas de integración. Se revisará y evaluará el rendimiento, la escalabilidad y la confiabilidad del sistema para garantizar que la implementación del patrón Publish/Subscribe sea efectiva y satisfaga los requisitos funcionales.
+La elección de la base de datos NoSQL (MongoDB) como tecnología de persistencia será confirmada mediante una revisión del diseño e implementación del componente gestor de base de datos. Además, se realizarán pruebas de escalabilidad y rendimiento para garantizar que cumple con los requisitos establecidos.
+
 
 ## Pros y Contras de las Opciones
 
 ### Opción 2: Patrón Request/Response
 
-* Bueno, porque permite un enfoque centralizado para la gestión y entrega de mensajes.
-* Neutral, porque facilita el control y la supervisión de la entrega de mensajes.
-* Malo, porque puede generar un mayor acoplamiento entre los componentes.
-* Malo, porque puede ser menos escalable en comparación con el patrón Publish/Subscribe.
+* Bueno, porque ofrece una alta escalabilidad horizontal y capacidad para manejar grandes volúmenes de datos.
+* Bueno, porque brinda flexibilidad en el modelado de datos debido a la ausencia de un esquema rígido.
+* Bueno, porque presenta un mayor rendimiento en operaciones de lectura y escritura en comparación con algunas bases de datos relacionales.
+* Bueno, porque se puede aplicar el patrón ABSTRACT FACTORY para abstraer la creación de conexiones y consultas.
+* Malo, porque tiene un menor soporte y comunidad en comparación con las bases de datos relacionales.
+* Malo, porque presenta limitaciones en consultas complejas y transacciones ACID.
 
 ## Más Información
 
-- [Artículo sobre el patrón Publish/Subscribe](https://learn.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber)
-
+- 
