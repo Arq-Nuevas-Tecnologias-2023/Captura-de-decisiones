@@ -32,10 +32,6 @@ El sistema requiere un módulo de Control de Conexión de Dispositivos para gest
 - Implementar estrategias de reconexión automática en caso de desconexiones.
 
 
-## Confirmación
-
-La implementación y el cumplimiento de este ADR se confirmarán a través de un proceso de revisión por parte del equipo de aequitecturay se se realizarán pruebas de integración para garantizar el correcto funcionamiento del módulo de Control de Conexión de Dispositivos basado en MQTT.
-
 ## Pros y Contras de las Opciones
 
 ### Opción 1: Uso de WebSocket para control de conexión
