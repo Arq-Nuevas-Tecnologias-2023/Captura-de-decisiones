@@ -32,16 +32,6 @@ El sistema requiere un módulo de Control de Conexión de Dispositivos para gest
 - Implementar estrategias de reconexión automática en caso de desconexiones.
 
 
-## Pros y Contras de las Opciones
-
-### Opción 1: Uso de WebSocket para control de conexión
-
-
-- Bueno, porque permite una comunicación bidireccional y en tiempo real entre el servidor y los dispositivos.
-- Bueno, porque proporciona una alta escalabilidad y eficiencia en la transmisión de datos.
-- Neutral, porque la reconexión automática en caso de desconexiones puede requerir un mayor control y gestión de los estados de los dispositivos.
-- Neutral, porque puede requerir una mayor configuración y administración de la seguridad de las conexiones.
-
 ## Más Información
 
 - [Comparativa entre WebSocket y MQTT](https://www.ibm.com/support/knowledgecenter/en/SSMQ79_9.1.0/com.ibm.itsm.sysadmin.doc/c_mqtt_websockets.html)

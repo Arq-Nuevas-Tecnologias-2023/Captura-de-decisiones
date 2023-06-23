@@ -57,17 +57,6 @@ La opción elegida es la **Opción 2: Uso de MQTT para control de conexión**. D
 
 La implementación y el cumplimiento de este ADR se confirmarán a través de un proceso de revisión por parte del equipo de aequitecturay se se realizarán pruebas de integración para garantizar el correcto funcionamiento del módulo de Control de Conexión de Dispositivos basado en MQTT.
 
-## Pros y Contras de las Opciones
-
-### Opción 2: Uso de MQTT para control de conexión
-
-
-* Bueno, porque MQTT es un protocolo ligero y eficiente diseñado específicamente para el IoT.
-* Bueno, porque proporciona un modelo de comunicación asincrónica y eficiente en la transmisión de mensajes.
-* Bueno, porque admite mecanismos avanzados de calidad de servicio (QoS) y garantiza la entrega de mensajes en entornos de red inestables.
-* Bueno, porque se alinea con el estilo de arquitectura Event Driven (STREAM) y el patrón Strategy.
-* Neutral, porque requiere la implementación y configuración de un broker MQTT.
-* Neutral, porque puede requerir una curva de aprendizaje inicial para familiarizarse con el protocolo y las mejores prácticas de uso.
 
 
 ## Más Información
