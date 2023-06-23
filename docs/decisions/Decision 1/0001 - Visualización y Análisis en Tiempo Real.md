@@ -1,8 +1,9 @@
 ---
 # Configuración para la plantilla de ADR "Nuevas tecnologias"
-parent: Decisiones de arquitectura
-nav_order: 1
+parent: Decisiones de arquitectura - Taller 1
+Estado: Aprobado
 title: Iteración 1
+Visualización y Análisis en Tiempo Real: Decisión 1
 
 # status: "{reemplazado por [ADR-0005](0005-ejemplo.md)}"
 # date: {2023-06-19}
