@@ -23,10 +23,6 @@ Esta decisión se refiere a la implementación de la Mensajería Interna y Notif
 
 El patrón Request/Response es otra opción viable para la implementación de la Mensajería Interna y Notificaciones. En este patrón, los componentes envían solicitudes de mensajes a un componente centralizado responsable de la entrega de los mensajes. El componente centralizado puede realizar la entrega directa o almacenar y enviar mensajes en cola para garantizar la entrega confiable.
 
-## Confirmación
-
-La implementación y cumplimiento de esta decisión de diseño se confirmará a través de revisiones de arquitectura y pruebas de integración. Se revisará y evaluará el rendimiento, la escalabilidad y la confiabilidad del sistema para garantizar que la implementación del patrón Publish/Subscribe sea efectiva y satisfaga los requisitos funcionales.
-
 ## Pros y Contras de las Opciones
 
 ### Opción 2: Patrón Request/Response

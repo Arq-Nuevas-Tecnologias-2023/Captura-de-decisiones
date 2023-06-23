@@ -39,10 +39,6 @@ Las consecuencias de esta decisión son:
 * Malo, porque requiere un diseño cuidadoso para evitar cuellos de botella o procesamientos ineficientes en la cadena.
 
 
-## Confirmación
-
-La implementación y cumplimiento de esta decisión se confirmará mediante una revisión del diseño y la implementación del módulo de Ordenes de Trabajo, así como pruebas de integración y revisión de arquitectura.
-
 ## Pros y Contras de las Opciones
 
 ### Opción 2: Enfoque basado en patrón Chain of Responsibility

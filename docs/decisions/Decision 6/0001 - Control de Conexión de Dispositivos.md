@@ -44,5 +44,4 @@ El sistema requiere un módulo de Control de Conexión de Dispositivos para gest
 
 ## Más Información
 
-- [Documentación de MQTT](https://mqtt.org/)
 - [Comparativa entre WebSocket y MQTT](https://www.ibm.com/support/knowledgecenter/en/SSMQ79_9.1.0/com.ibm.itsm.sysadmin.doc/c_mqtt_websockets.html)
