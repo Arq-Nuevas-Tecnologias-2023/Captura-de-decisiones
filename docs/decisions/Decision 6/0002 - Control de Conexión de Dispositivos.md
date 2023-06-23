@@ -48,6 +48,7 @@ La opción elegida es la **Opción 2: Uso de MQTT para control de conexión**. D
 * Bueno, porque MQTT permite una fácil integración con otros componentes y servicios del sistema.
 * Bueno, porque MQTT proporciona mecanismos avanzados de calidad de servicio (QoS) para garantizar la entrega de mensajes en entornos de red inestables.
 * Bueno, porque el enfoque de publicación/suscripción de MQTT facilita la implementación de estrategias de control de conexión flexibles.
+* Bueno, porque es de código libre y gratuito.
 * Neutral, porque la implementación y configuración de un broker MQTT puede requerir recursos adicionales.
 * Neutral, porque el uso de MQTT puede requerir una curva de aprendizaje inicial para familiarizarse con el protocolo y las mejores prácticas de uso.
 
