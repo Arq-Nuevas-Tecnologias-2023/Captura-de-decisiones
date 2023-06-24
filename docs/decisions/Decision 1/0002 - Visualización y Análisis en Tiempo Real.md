@@ -1,6 +1,6 @@
 ---
 # Configuración para la plantilla de ADR "Nuevas tecnologias"
-Estado: Rechazadoo
+Estado: Rechazado
 title: Visualización y Análisis en Tiempo Real
 Decisión: 002
 date: 2023-06-19
