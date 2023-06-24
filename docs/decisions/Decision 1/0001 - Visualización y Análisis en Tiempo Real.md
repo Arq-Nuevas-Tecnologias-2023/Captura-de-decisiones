@@ -1,15 +1,12 @@
 ---
 # Configuración para la plantilla de ADR "Nuevas tecnologias"
-parent: Decisiones de arquitectura - Taller 1
 Estado: Aprobado
-title: Iteración 1
-Visualización y Análisis en Tiempo Real: Decisión 1
+title: Visualización y Análisis en Tiempo Real
+Decisión: 001
+date: 2023-06-19
+deciders: {Grupo 7 - MATI}
+consulted: {Arquitectos Senior, ArquitectosCognitivos}
 
-# status: "{reemplazado por [ADR-0005](0005-ejemplo.md)}"
-# date: {2023-06-19}
-# deciders: {Grupo 7 - MATI}
-# consulted: {Arquitectos Senior, ArquitectosCognitivos}
-# informed: {Grupo 7 - MATI}
 ---
 ## Contexto y Problema
 
@@ -67,6 +64,8 @@ La implementación de esta decisión será confirmada mediante una revisión de 
 
 ## Más Información
 
-{NNNN}
+- [Documentación de MQTT](https://cockpit.tn/)
+- [Documentación de Publisher-Subscriber](https://learn.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber)
+-[Abstract Factory Pattern](https://www.javatpoint.com/abstract-factory-pattern)
 
 

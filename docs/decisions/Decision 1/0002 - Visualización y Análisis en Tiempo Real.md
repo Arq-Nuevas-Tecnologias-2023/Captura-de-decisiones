@@ -1,8 +1,11 @@
 ---
 # Configuración para la plantilla de ADR "Nuevas tecnologias"
-parent: Decisiones de arquitectura
-nav_order: 1
-title: Iteración 1
+Estado: Rechazadoo
+title: Visualización y Análisis en Tiempo Real
+Decisión: 002
+date: 2023-06-19
+deciders: {Grupo 7 - MATI}
+consulted: {Arquitectos Senior, ArquitectosCognitivos}
 
 # status: "{reemplazado por [ADR-0005](0005-ejemplo.md)}"
 # date: {2023-06-19}
@@ -57,4 +60,5 @@ Esta opción proporciona una mayor simplicidad al utilizar solo los patrones de 
 
 ## Más Información
 
-{NNNN}
+- [Documentación de Publisher-Subscriber](https://learn.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber)
+-[Documentación Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)
