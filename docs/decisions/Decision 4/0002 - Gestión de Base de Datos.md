@@ -1,14 +1,11 @@
 ---
 # Configuración para la plantilla de ADR "Nuevas tecnologias"
-parent: Decisiones de arquitectura
-nav_order: 1
-title: Iteración 1
-
-# status: "{reemplazado por [ADR-0005](0005-ejemplo.md)}"
-# date: {2023-06-19}
-# deciders: {Grupo 7 - MATI}
-# consulted: {Arquitectos Senior, ArquitectosCognitivos}
-# informed: {Grupo 7 - MATI}
+Estado: Aprobado
+title: Gestión de Base de Datos.
+Decisión: 001
+date: 2023-06-19
+deciders: {Grupo 7 - MATI}
+consulted: {Arquitectos Senior, Arquitectos Cognitivos}
 ---
 ## Contexto y Problema
 
@@ -40,5 +37,4 @@ La elección de la base de datos NoSQL (MongoDB) como tecnología de persistenci
 * Malo, porque presenta limitaciones en consultas complejas y transacciones ACID.
 
 ## Más Información
-
-- 
+-[Documentación MongoDB](https://www.mongodb.com/es/nosql-explained) 

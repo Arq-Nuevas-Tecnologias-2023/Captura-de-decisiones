@@ -1,8 +1,8 @@
 ---
 # Configuración para la plantilla de ADR "Nuevas tecnologias"
 Estado: Rechazado
-title: Visualización y Análisis en Tiempo Real
-Decisión: 001
+title: Mensajería Interna y Notificaciones
+Decisión: 002
 date: 2023-06-19
 deciders: {Grupo 7 - MATI}
 consulted: {Arquitectos Senior, ArquitectosCognitivos}

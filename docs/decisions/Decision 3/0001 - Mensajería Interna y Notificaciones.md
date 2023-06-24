@@ -1,7 +1,7 @@
 ---
 # Configuración para la plantilla de ADR "Nuevas tecnologias"
 Estado: Aprobado
-title: Visualización y Análisis en Tiempo Real
+title: Mensajería Interna y Notificaciones
 Decisión: 001
 date: 2023-06-19
 deciders: {Grupo 7 - MATI}
