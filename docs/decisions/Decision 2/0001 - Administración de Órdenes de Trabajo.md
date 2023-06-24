@@ -57,7 +57,7 @@ La implementación y cumplimiento de esta decisión se confirmará mediante una 
 
 ## Más Información
 
--[Abstract Factory Pattern](https://www.javatpoint.com/abstract-factory-pattern){}
+-[Abstract Factory Pattern](https://www.javatpoint.com/abstract-factory-pattern)
 
 
 
