@@ -1,15 +1,11 @@
 ---
 # Configuración para la plantilla de ADR "Nuevas tecnologias"
-parent: Decisiones de arquitectura - Taller 1
-Estado: Aprobado
-title: Iteración 1
-Visualización y Análisis en Tiempo Real: Decisión 1
-
-# status: "{reemplazado por [ADR-0005](0005-ejemplo.md)}"
-# date: {2023-06-19}
-# deciders: {Grupo 7 - MATI}
-# consulted: {Arquitectos Senior, ArquitectosCognitivos}
-# informed: {Grupo 7 - MATI}
+Estado: Rechazado
+title: Algoritmos de Optimización y Predicción.
+Decisión: 002
+date: 2023-06-19
+deciders: {Grupo 7 - MATI}
+consulted: {Arquitectos Senior, Arquitectos Cognitivos}
 ---
 ## Contexto y Problema
 
@@ -51,6 +47,8 @@ Las consecuencias de esta decisión son:
 
 ## Más Información
 
-{NNNN}
+-[Documentación Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)
+
+
 
 
