@@ -39,7 +39,7 @@ La opción elegida es la **Opción 2: Uso de MQTT para control de conexión**. D
 - MQTT es un protocolo ligero y eficiente diseñado específicamente para el Internet de las Cosas (IoT).
 - Proporciona un modelo de comunicación asincrónica, lo que permite una mayor flexibilidad en el manejo de conexiones y mensajes.
 - MQTT admite mecanismos avanzados de calidad de servicio (QoS), lo que permite garantizar la entrega de mensajes incluso en entornos de red inestables.
-- El enfoque de publicación/suscripción de MQTT se adapta bien al estilo de arquitectura Event Driven (STREAM) y al patrón Strategy.
+- El enfoque de publicación/suscripción de MQTT se adapta bien al estilo de arquitectura Event Driven y al patrón Strategy.
 
 
 ## Consecuencias

@@ -1,18 +1,11 @@
 ---
 # Configuración para la plantilla de ADR "Nuevas tecnologias"
 Estado: Aprobado
-title: Visualización y Análisis en Tiempo Real
+title: Administración de Órdenes de Trabajo
 Decisión: 001
 date: 2023-06-19
 deciders: {Grupo 7 - MATI}
 consulted: {Arquitectos Senior, ArquitectosCognitivos}
-
-
-# status: "{reemplazado por [ADR-0005](0005-ejemplo.md)}"
-# date: {2023-06-19}
-# deciders: {Grupo 7 - MATI}
-# consulted: {Arquitectos Senior, ArquitectosCognitivos}
-# informed: {Grupo 7 - MATI}
 ---
 ## Contexto y Problema
 
@@ -64,6 +57,8 @@ La implementación y cumplimiento de esta decisión se confirmará mediante una 
 
 ## Más Información
 
-{NNNN}
+-[Abstract Factory Pattern](https://www.javatpoint.com/abstract-factory-pattern){}
+
+
 
 

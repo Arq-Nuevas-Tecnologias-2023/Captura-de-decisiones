@@ -12,7 +12,7 @@ title: Iteración 1
 ---
 ## Contexto y Problema
 
-Se requiere implementar un componente gestor de base de datos que cumpla con el estilo arquitectónico Event Driven (STREAM) y el patrón ABSTRACT FACTORY. La elección de la tecnología de persistencia es fundamental para garantizar la escalabilidad, rendimiento y confiabilidad del sistema.
+Se requiere implementar un componente gestor de base de datos que cumpla con el estilo arquitectónico Event Driven y el patrón ABSTRACT FACTORY. La elección de la tecnología de persistencia es fundamental para garantizar la escalabilidad, rendimiento y confiabilidad del sistema.
 
 
 ## Drivers de Decisión
