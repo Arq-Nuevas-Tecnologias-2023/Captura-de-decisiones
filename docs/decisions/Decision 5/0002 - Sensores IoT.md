@@ -53,6 +53,6 @@ La implementación de esta decisión se confirmará mediante pruebas de funciona
 
 ## Más Información
 
-{NNNN}
+-[Sensores Modulares](https://medind10ma.blogspot.com/2017/07/sensores-sensor-un-sensor-es-un.html#:~:text=Son%20aquellos%20en%20donde%20la,entrada%20solo%20controla%20la%20salida.)
 
 
