@@ -57,7 +57,7 @@ La implementación de la arquitectura basada en Strategy Pattern será confirmad
 
 ## Más Información
 
--[Algoritmo de regresión logística] (https://www.kdnuggets.com/2022/07/logistic-regression-work.html#:~:text=is%20Logistic%20Regression%3F-,Logistic%20regression%20is%20a%20Machine%20Learning%20classification%20algorithm%20that%20is,the%20logistic%20of%20the%20result)
--[Algoritmo Gradient Boosting] (https://www.cienciadedatos.net/documentos/py09_gradient_boosting_python)
+- [Algoritmo de regresión logística] (https://www.kdnuggets.com/2022/07/logistic-regression-work.html#:~:text=is%20Logistic%20Regression%3F-,Logistic%20regression%20is%20a%20Machine%20Learning%20classification%20algorithm%20that%20is,the%20logistic%20of%20the%20result)
+- [Algoritmo Gradient Boosting] (https://www.cienciadedatos.net/documentos/py09_gradient_boosting_python)
 
 
