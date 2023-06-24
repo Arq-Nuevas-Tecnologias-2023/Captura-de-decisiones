@@ -1,15 +1,11 @@
 ---
 # Configuración para la plantilla de ADR "Nuevas tecnologias"
-parent: Decisiones de arquitectura - Taller 1
-Estado: Aprobado
-title: Iteración 1
-Visualización y Análisis en Tiempo Real: Decisión 1
-
-# status: "{reemplazado por [ADR-0005](0005-ejemplo.md)}"
-# date: {2023-06-19}
-# deciders: {Grupo 7 - MATI}
-# consulted: {Arquitectos Senior, ArquitectosCognitivos}
-# informed: {Grupo 7 - MATI}
+Estado: Aprobadoo
+title: Sensores IoT
+Decisión: 002
+date: 2023-06-19
+deciders: {Grupo 7 - MATI}
+consulted: {Arquitectos Senior, Arquitectos Cognitivos}
 ---
 ## Contexto y Problema
 
