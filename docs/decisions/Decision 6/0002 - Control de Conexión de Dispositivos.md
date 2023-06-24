@@ -1,14 +1,11 @@
 ---
 # Configuración para la plantilla de ADR "Nuevas tecnologias"
-parent: Decisiones de arquitectura
-nav_order: 1
-title: Iteración 1
-
-# status: "{reemplazado por [ADR-0005](0005-ejemplo.md)}"
-# date: {2023-06-19}
-# deciders: {Grupo 7 - MATI}
-# consulted: {Arquitectos Senior, ArquitectosCognitivos}
-# informed: {Grupo 7 - MATI}
+Estado: Aprobado
+title: Control de Conexión de Dispositivos
+Decisión: 002
+date: 2023-06-19
+deciders: {Grupo 7 - MATI}
+consulted: {Arquitectos Senior, Arquitectos Cognitivos}
 ---
 ## Contexto y Problema
 
